@@ -1,0 +1,11 @@
+<% include partials/header %> 
+<form method="POST" action="/issuer/issueCert" class="mx-auto mt-5" style="width: 30%;">
+    <div class="form-group"><input class="form-control" type="text" placeholder="Name" name="name" required></div>
+    <div class="form-group"><input class="form-control" type="text" placeholder="Degree" name="degree" required></div>
+    <div class="form-group"><input class="form-control" type="text" placeholder="College" name="clg" required></div>
+    <div class="form-group"><input class="form-control" type="text" placeholder="Score" name="score" required></div>
+    <div class="form-group"><input class="form-control" type="text" placeholder="Batch" name="batch" required></div>
+    <div class="form-group"><input class="form-control" type="email" placeholder="email" name="email" required></div>
+    <div class="form-group"><input class="form-control btn btn-dark" type="submit" value="Submit"></div>
+</form>
+<% include partials/footer %> 

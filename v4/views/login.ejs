@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+<div class="w-25 p-3 mt-5 mx-auto needs-validation">
+    <h2 class="text-center mb-4"><%= title %></h2>
+    <form action="<% action %>" method="POST">
+        <div class="form-group">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+            <div class="invalid-feedback">
+                Please enter your email.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+            <div class="invalid-feedback">
+                Please enter your password.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-dark btn-block">Sign In</button>
+    </form>
+</div>
+
+
+<% include partials/footer %>

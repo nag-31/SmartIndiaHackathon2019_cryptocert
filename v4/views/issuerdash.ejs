@@ -1,0 +1,28 @@
+<% include partials/header %>
+
+<div class="container">
+    <a href="/issuer/issueCert" class="btn btn-dark mt-3">+ Issue Certificate</a>
+    <table class="table table-striped table-hover mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Degree</th>
+            <th scope="col">College</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if(data){ %>
+            <% data.forEach(function(cert){ %>
+              <tr>
+                <td><%= cert.name %></td>
+                <td><%= cert.degree %></td>
+                <td><%= cert.clg %></td>
+                <td><%= cert.address %></td>
+              </tr>
+            <% })} %>
+        </tbody>
+      </table>
+</div>
+
+<% include partials/footer %>

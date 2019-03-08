@@ -1,0 +1,27 @@
+<% include partials/header %>
+    
+    <div class="container">
+        <h4 class="mt-3 mb-3">My Certificates</h4>
+        <% if(certs){ %>
+        <div class="row">
+            <% certs.forEach(function(cert){ %>
+            <div class="col-lg-3">
+               <a class="text-decoration-none" href="cert/<%= cert.address %>"><div class="card border-dark btn-outline-secondary mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-2 card-title"><i class="fas fa-certificate"></i></div>
+                            <h5 class="col-lg-10 card-title"><%= cert.degree %></h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 card-title"><i class="fas fa-university"></i></div>
+                            <p class="col-lg-10 card-text"><%= cert.issuer %></p>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+            <% }) %>
+        </div>
+        <% } %>
+    </div>
+
+<% include partials/footer %>

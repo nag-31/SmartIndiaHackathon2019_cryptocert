@@ -1,0 +1,43 @@
+body, html {
+    height: 100%;
+}
+
+.landing {
+    /* The image used */
+    background-image: url("/img/landing4.png");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cert-font{
+    font-family: 'Tangerine', cursive;
+}
+
+.cert-head{
+    font-size: 5rem;
+}
+
+.cert-body{
+    font-size: 3rem;
+}
+
+#verifyfile{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero{
+    opacity: 0.4;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 0;
+}
+

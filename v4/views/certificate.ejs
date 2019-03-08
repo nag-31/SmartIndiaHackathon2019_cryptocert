@@ -1,0 +1,16 @@
+<% include partials/header %>
+<div class="container mt-5">
+    <% if(cert){ %>
+    <a class="btn btn-dark mb-3" href="<%= cert.downloadlink %>">Download Verify.json</a>
+    <div class="card border-primary">
+        <div class="card-body">
+            <h1 class="cert-font cert-head text-center">Certificate</h1>
+            <p class="cert-font cert-body text-center">This is to certify that</p>
+            <h3 class="text-center"><%= cert.name %></h3>
+            <p class="cert-font cert-body text-center">has successfully completed <%= cert.degree %> with a score of <%= cert.score %></p>
+            <p class="cert-font cert-body text-center">from <%= cert.college %></p>
+        </div>
+    </div>
+    <%}%>
+</div>
+<% include partials/footer %>

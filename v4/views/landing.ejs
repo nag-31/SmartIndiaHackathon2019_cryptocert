@@ -1,0 +1,24 @@
+<% include partials/header %>
+<div class="landing">
+    <div class="jumbotron hero mt-2">
+        <div class="container">
+            <h1 class="display-4"><img src="img.jpeg" width:60px height:60px>CryptoCerts</h1>
+            <p class="lead">A secure way to store and verify your certificates.</p>
+        </div>
+    </div>
+
+
+    <form class="form-inline mx-auto w-75 justify-content-center" action="/verify/" method="POST" enctype="multipart/form-data">
+        <h2 class="w-100 mt-5 mb-3 text-center">Verify your certificate</h2>
+        <input class="form-control-lg w-50 mr-sm-2" id="textbox" type="url" placeholder="Upload verify.json file" readonly>
+
+        <div class="m-3">
+            <label class="btn btn-md btn-dark" for="verifyfile">Upload file...</label>
+            <input type="file" name="verifyfile" id="verifyfile">
+        </div>
+        <button class="btn btn-md btn-dark" type="submit">Verify</button>
+    </form>
+</div>
+
+<script src="/js/landing.js"></script>
+<% include partials/footer %>
